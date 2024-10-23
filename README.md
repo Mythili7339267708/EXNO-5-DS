@@ -32,6 +32,7 @@ plt.plot(x_values, y_values)
 
 plt.show()
 ```
+![image](https://github.com/user-attachments/assets/0517d3e6-084d-4c3e-b49d-a454a0e456df)
 
 
 ```
@@ -313,7 +314,116 @@ plt.show()
 
 ![image](https://github.com/user-attachments/assets/c8745ca8-0fd8-4a81-83a9-933014101956)
 
+```
+import matplotlib.pyplot as plt
+values = [5,6,3,7,2]
+names = ["A","B","C","D","E"]
+
+plt.barh(names, values, color="yellowgreen")
+plt.show()
+```
+![image](https://github.com/user-attachments/assets/46b3fb0e-3da1-49c3-8674-da4ab28b5b69)
+
+```
+import matplotlib.pyplot as plt
+height = [10, 24, 36, 40, 5]
+names = ['one', 'two', 'three', 'four', 'five']
+c1 =['red', 'green']
+c2 =['b', 'g']
+plt.bar(names, height, width=0.8, color=c1)
+plt.xlabel('x - axis')
+plt.ylabel('y - axis')
+plt.title('My bar chart!')
+plt.show()
+```
+
+![image](https://github.com/user-attachments/assets/4a9a2ab2-a4e6-4bdb-bdc9-3cc962857423)
+
+
+```
+import matplotlib.pyplot as plt
+x = [2,8,10]
+y = [11,16,9]
+x2 = [3,9,11]
+y2 = [6,15,7]
+plt.bar(x,y,color='r')
+plt.bar(x2,y2,color='g')
+plt.title('Bar graph')
+plt.ylabel('Y axis')
+plt.xlabel('X axis')
+plt.show()
+```
+![image](https://github.com/user-attachments/assets/220b504c-b6b6-4689-bd8e-5ddb4c7e7599)
+
+```
+import matplotlib.pyplot as plt
+ages=[2,5,70,40,45,50,45,43,4,44,60,7,13,57,18,90,77,32,21,20,40]
+range = (0, 100)
+bins = 10
+plt.hist(ages, bins, range, color='green',histtype='bar', rwidth=0.8)
+plt.xlabel('age')
+plt.ylabel('No. of people')
+plt.title('My histogram')
+plt.show()
+```
+![image](https://github.com/user-attachments/assets/9acafd40-8971-46d2-aa1a-d3c568d6096a)
+
+```
+import matplotlib.pyplot as plt
+x = [2,1,6,4,2,4,8,9,4,2,4,10,6,4,5,7,7,3,2,7,5,3,5,9,2,1]
+plt.hist(x, bins = 10, color='blue', alpha=0.5)
+plt.show()
+```
+
+![image](https://github.com/user-attachments/assets/0b14d64d-954e-483a-aa4a-fa5349589d84)
+
+```
+import matplotlib.pyplot as plt
+import numpy as np
+
+```
+```
+np.random.seed(0)
+data = np.random.normal(loc=0, scale=1, size=100)
+data
+```
+
+![image](https://github.com/user-attachments/assets/d292e407-32da-4d54-b67a-ee86400debf1)
+
+```
+fig, ax = plt.subplots()
+ax.boxplot(data)
+ax.set_xlabel('Data')
+ax.set_ylabel('Values')
+ax.set_title('Box Plot')
+```
+![image](https://github.com/user-attachments/assets/53bf0233-2298-4949-872f-6a072bf3c067)
+
+```
+import matplotlib.pyplot as plt
+activities = ['eat', 'sleep', 'work', 'play']
+slices = [3, 7, 8, 6]
+colors = ['r', 'y', 'g', 'b']
+plt.pie(slices, labels = activities, colors=colors, startangle=90, shadow=True, explode = (0, 0, 0.1, 0), radius = 1.2, autopct = '%1.1f%%')
+plt.legend()
+plt.show()
+```
+
+![image](https://github.com/user-attachments/assets/e85edb56-b59b-4c1e-8e3a-bfd43b268471)
+
+```
+labels = 'python', 'c++', 'Ruby', 'Java'
+sizes = [215, 130, 245, 210]
+colors = ['gold', 'yellowgreen', 'lightcoral', 'lightskyblue']
+explode = (0,0.4,0,0.5)
+plt.pie(sizes, explode=explode, labels=labels, colors=colors, autopct='%1.1f%%', shadow=True)
+plt.axis('equal')
+plt.show()
+```
+
+![image](https://github.com/user-attachments/assets/f8d96f78-9b48-452b-9bf7-33fd4d1d201b)
+
 
 # Result:
 
- Include your result here
+Thus the Data Visualization using matplot python library for the given datas is executed successfully.
