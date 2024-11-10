@@ -1,7 +1,11 @@
-# EXNO-5-DS-DATA VISUALIZATION USING MATPLOT LIBRARY
-# Name: V MYTHILI (212223040123)
-# DEPT: CSE
-# DATE: 23.010.24
+
+<H3>NAME: V MYTHILI</H3>
+<H3>REG NO: 212223040123</H3>
+<H3>EX NO: 5</H3>
+
+# DS-DATA VISUALIZATION USING MATPLOT LIBRARY
+
+
 # Aim:
   To Perform Data Visualization using matplot python library for the given datas.
 
